@@ -30,6 +30,7 @@ const csvParser = parse({delimiter: ','}, (err, data) => {
 				episode: line[0],
 				description: line[1],
 				avatar: line[2] !== '' ? line[2] : undefined,
+				avatar2: line[3] !== '' ? line[3] : undefined,
 			};
 
 			startRender(props)
