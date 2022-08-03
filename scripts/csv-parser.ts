@@ -4,6 +4,7 @@ import async from 'async';
 import {startRender} from './remotion';
 import path from 'path';
 import chalk from 'chalk';
+import e from 'express';
 
 const csvParser = parse({delimiter: ','}, (err, data) => {
 	async.eachSeries(
@@ -36,5 +37,19 @@ const csvParser = parse({delimiter: ','}, (err, data) => {
 });
 
 export const startParse = async () => {
-	await fs.createReadStream('./episodes.csv').pipe(csvParser);
+	// Check for episodes.csv
+	const episodes = `${path.resolve(__dirname, '..')}/episodes.csv`;
+
+	if (fs.existsSync(episodes)) {
+		await fs.createReadStream(episodes).pipe(csvParser);
+	} else {
+		console.log(
+			`[${chalk.red('error')}]: No ${chalk.blue('episodes.csv')} found`
+		);
+		console.log(
+			`[${chalk.red('error')}]: Please copy ${chalk.blue(
+				'episodes.demo.csv'
+			)} to ${chalk.blue('episodes.csv')}`
+		);
+	}
 };
