@@ -6,6 +6,8 @@ dist
 out
 art
 
+episodes.csv
+
 
 .yarn/*
 !.yarn/patches
