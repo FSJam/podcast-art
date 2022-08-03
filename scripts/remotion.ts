@@ -61,4 +61,6 @@ export const startRender = async ({
 	console.log(
 		`[${chalk.green('remotion')}]: completed rendering episode ${episode}`
 	);
+
+	return true;
 };

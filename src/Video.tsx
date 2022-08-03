@@ -14,6 +14,7 @@ export const RemotionVideo: React.FC = () => {
 					description: `Chris' favorite episode of the show.`,
 					avatar:
 						'https://pbs.twimg.com/profile_images/1530701793264402432/nTln6dx5_400x400.jpg',
+					avatar2: undefined,
 				}}
 			/>
 		</>

@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import {startParse} from './csv-parser';
+import {startParse} from './json-parser';
 
 console.log('==================================================');
 console.log('||                                              ||');
