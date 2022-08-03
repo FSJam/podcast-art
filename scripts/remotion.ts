@@ -1,6 +1,7 @@
 import path from 'path';
 import {bundle} from '@remotion/bundler';
 import {getCompositions, renderStill} from '@remotion/renderer';
+import chalk from 'chalk';
 
 export const startRender = async ({
 	episode,
@@ -11,6 +12,10 @@ export const startRender = async ({
 	description?: string;
 	avatar?: string;
 }) => {
+	console.log(
+		`[${chalk.green('remotion')}]: started rendering episode ${episode}`
+	);
+
 	// The composition you want to render
 	const compositionId = 'PodcastArt';
 	// You only have to do this once, you can reuse the bundle.
@@ -40,6 +45,7 @@ export const startRender = async ({
 		throw new Error(`No composition with the ID ${compositionId} found.
   Review "${entry}" for the correct ID.`);
 	}
+
 	const outputLocation = `${path.resolve(
 		__dirname,
 		'..'
@@ -51,5 +57,8 @@ export const startRender = async ({
 		output: outputLocation,
 		inputProps,
 	});
-	console.log('Render done!');
+
+	console.log(
+		`[${chalk.green('remotion')}]: completed rendering episode ${episode}`
+	);
 };

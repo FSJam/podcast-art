@@ -3,7 +3,9 @@ import fs from 'fs';
 import async from 'async';
 import {startRender} from './remotion';
 import path from 'path';
-const parser = parse({delimiter: ','}, (err, data) => {
+import chalk from 'chalk';
+
+const csvParser = parse({delimiter: ','}, (err, data) => {
 	async.eachSeries(
 		data,
 		(line: [number | 'episode-id', string, string], callback) => {
@@ -18,6 +20,9 @@ const parser = parse({delimiter: ','}, (err, data) => {
 
 			// If podcast art exist skip
 			if (fs.existsSync(imagePath)) {
+				console.log(
+					`[${chalk.hex('#F4AF00')('skipped')}]: skipped episode ${line[0]}`
+				);
 				return callback();
 			}
 
@@ -30,4 +35,6 @@ const parser = parse({delimiter: ','}, (err, data) => {
 	);
 });
 
-fs.createReadStream('./episodes.csv').pipe(parser);
+export const startParse = async () => {
+	await fs.createReadStream('./episodes.csv').pipe(csvParser);
+};
