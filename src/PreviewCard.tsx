@@ -1,8 +1,8 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, Img} from 'remotion';
 import './fonts.css';
-import {Swirl} from './Swirl';
 
+import art from './art.png';
 const fontFamily = 'Inter';
 
 const absContainer: React.CSSProperties = {
@@ -10,70 +10,74 @@ const absContainer: React.CSSProperties = {
 };
 
 const container: React.CSSProperties = {
-	flex: 1,
-	padding: 100,
 	fontFamily,
 	// Setting this property allows you to set a linebreak via URL parameter %0A
 	whiteSpace: 'pre-wrap',
 };
 
-const titleStyle: React.CSSProperties = {
-	fontSize: '5.5em',
-	marginTop: 0,
-	fontWeight: 700,
-	marginBottom: 0,
-};
-
 const descriptionStyle: React.CSSProperties = {
-	color: '#61778a',
-	fontSize: '3.2em',
+	color: '#FFFFFF',
+	fontSize: '14.5rem',
+	fontFamily,
+	fontWeight: 600,
 	margin: 0,
-	marginTop: 20,
-	lineHeight: 1.3,
-	fontWeight: 500,
-	maxWidth: '90%',
 	maxLines: 2,
 	overflow: 'hidden',
 	textOverflow: 'ellipsis',
 	lineClamp: 2,
 };
 
-const gradientText: React.CSSProperties = {
-	background: 'linear-gradient(to right, black, #666)',
-	WebkitBackgroundClip: 'text',
-	WebkitTextFillColor: 'transparent',
-	fontFamily,
+const episodeStyle: React.CSSProperties = {
+	color: '#FFFFFF',
+	fontSize: '6rem',
+	margin: 0,
+	paddingRight: '2rem',
 };
 
-const sloganStyle: React.CSSProperties = {
+const textContainer: React.CSSProperties = {
+	left: '7rem',
 	position: 'absolute',
-	bottom: 58,
-	right: 100,
-	fontSize: 36,
-	lineHeight: 1.1,
-	fontWeight: 700,
+	width: '76rem',
 	textAlign: 'right',
-	whiteSpace: 'pre',
 };
-
+const imageContainer: React.CSSProperties = {
+	top: 991,
+	left: 1430,
+};
+const imageStyle: React.CSSProperties = {
+	borderRadius: '100%',
+	height: 1424,
+	width: 1424,
+	zIndex: 10,
+};
 export const PreviewCard: React.FC<{
-	title: string;
+	episode: number;
 	description: string;
-	slogan: string;
-}> = ({title, description, slogan}) => {
+}> = ({episode, description}) => {
 	return (
 		<AbsoluteFill style={absContainer}>
-			<AbsoluteFill>
-				<div style={container}>
-					<div style={titleStyle}>
-						<span style={gradientText}>{title}</span>
-					</div>
-					<p style={descriptionStyle}>{description}</p>
-					<div style={sloganStyle}>{slogan}</div>
-				</div>
+			<AbsoluteFill style={imageContainer}>
+				<Img
+					style={imageStyle}
+					src="https://pbs.twimg.com/profile_images/1389683812968194049/MhsEUijj_400x400.jpg"
+				/>
 			</AbsoluteFill>
 			<AbsoluteFill>
-				<Swirl />
+				<Img src={art} />
+			</AbsoluteFill>
+			<AbsoluteFill
+				style={{
+					justifyContent: 'center',
+					height: 'auto',
+					margin: '40rem 0px 20rem',
+				}}
+			>
+				<div style={textContainer}>
+					<div style={container}>
+						<p style={episodeStyle}>Episode {episode}</p>
+						<p style={descriptionStyle}>{description}</p>
+					</div>
+				</div>
 			</AbsoluteFill>
 		</AbsoluteFill>
 	);

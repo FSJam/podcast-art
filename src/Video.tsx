@@ -7,12 +7,11 @@ export const RemotionVideo: React.FC = () => {
 			<Still
 				id="PreviewCard"
 				component={PreviewCard}
-				width={1200}
-				height={627}
+				width={3000}
+				height={3000}
 				defaultProps={{
-					title: 'Welcome to Remotion',
-					description: 'Edit Video.tsx to change template',
-					slogan: 'Write videos\nin React',
+					episode: 44,
+					description: 'Qwik with Misko Heavery',
 				}}
 			/>
 		</>
