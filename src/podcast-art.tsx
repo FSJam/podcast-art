@@ -50,17 +50,15 @@ const imageStyle: React.CSSProperties = {
 	width: 1424,
 	zIndex: 10,
 };
-export const PreviewCard: React.FC<{
+export const PodcastArt: React.FC<{
 	episode: number;
 	description: string;
-}> = ({episode, description}) => {
+	avatar: string;
+}> = ({episode, description, avatar}) => {
 	return (
 		<AbsoluteFill style={absContainer}>
 			<AbsoluteFill style={imageContainer}>
-				<Img
-					style={imageStyle}
-					src="https://pbs.twimg.com/profile_images/1389683812968194049/MhsEUijj_400x400.jpg"
-				/>
+				<Img style={imageStyle} src={avatar} />
 			</AbsoluteFill>
 			<AbsoluteFill>
 				<Img src={art} />

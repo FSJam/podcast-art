@@ -3,7 +3,7 @@
 A template for designing still images with dynamic data with built-in server for deploying to the cloud.
 
 <p align="center">
-    <img src="https://remotion-still.herokuapp.com/PreviewCard.jpeg?title=Still%20image%20generator&description=Dynamic%20images%20generation%20service%20with%20full%20design%20freedom&slogan=Powered%20by%0ARemotion">
+    <img src="https://remotion-still.herokuapp.com/PodcastArt.jpeg?title=Still%20image%20generator&description=Dynamic%20images%20generation%20service%20with%20full%20design%20freedom&slogan=Powered%20by%0ARemotion">
 </p>
 
 ## Commands
@@ -34,7 +34,7 @@ You can run a server that serves dynamic images based on it's URL. Run
 npm run server
 ```
 
-And then visit `http://localhost:8000/PreviewCard.png?title=Hello+World` in your browser to render an image.
+And then visit `http://localhost:8000/PodcastArt.png?title=Hello+World` in your browser to render an image.
 
 - Specify the ID of the composition you want to render after the `/`. You can edit the compositions in `src/Video.tsx`.
 - Add either a `.png` or a `.jpeg` extension depending on which image format you want.
