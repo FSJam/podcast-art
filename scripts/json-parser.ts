@@ -3,61 +3,35 @@ import {startRender} from './remotion';
 import path from 'path';
 import chalk from 'chalk';
 import pLimit from 'p-limit';
+import {InputProps} from './types';
 
 // Example Concurrency of 3 promise at once
 const limit = pLimit(5);
 
-const jsonParser = async (
-	data: {
-		episodeId: number;
-		title: string;
-		avatar?: string | undefined;
-		avatar2?: string | undefined;
-	}[]
-) =>
+const jsonParser = async (data: InputProps[]) =>
 	Promise.all(
-		data.map(
-			async ({
-				episodeId,
-				title,
-				avatar,
-				avatar2,
-			}: {
-				episodeId: number;
-				title: string;
-				avatar?: string;
-				avatar2?: string;
-			}) => {
-				// Go to art folder create const of podcast art path
-				const imagePath = `${path.resolve(
-					__dirname,
-					'..'
-				)}/art/episode-${episodeId}.png`;
+		data.map(async (inputProps: InputProps) => {
+			// Go to art folder create const of podcast art path
+			const imagePath = `${path.resolve(__dirname, '..')}/art/episode-${
+				inputProps.episodeId
+			}.png`;
 
-				// If podcast art exist skip
-				if (fs.existsSync(imagePath)) {
-					// Console.log(
-					// 	`[${chalk.hex('#F4AF00')('skipped')}]: skipped episode ${episodeId}`
-					// );
-					return 'skipped';
-				}
-
-				const props = {
-					episode: episodeId,
-					description: title,
-					avatar,
-					avatar2,
-				};
-				try {
-					await limit(() => startRender(props));
-					return 'rendered';
-				} catch (err) {
-					console.log(`[${chalk.red('error')}]: Skipped episode ${episodeId}`);
-					console.log(`[${chalk.red('error')}]:`, err);
-					return 'error';
-				}
+			// If podcast art exist skip
+			if (fs.existsSync(imagePath)) {
+				return 'skipped';
 			}
-		)
+
+			try {
+				await limit(() => startRender(inputProps));
+				return 'rendered';
+			} catch (err) {
+				console.log(
+					`[${chalk.red('error')}]: Skipped episode ${inputProps.episodeId}`
+				);
+				console.log(`[${chalk.red('error')}]:`, err);
+				return 'error';
+			}
+		})
 	);
 
 export const startParse = async () => {
@@ -66,7 +40,7 @@ export const startParse = async () => {
 	try {
 		if (fs.existsSync(episodes)) {
 			const data = await fs.readFileSync(episodes);
-			const parsedData = JSON.parse(data);
+			const parsedData = JSON.parse(data.toString());
 			const returnedStatus = await jsonParser(parsedData);
 			// Work out statuses
 			const skipped = Object.values(returnedStatus).filter(

@@ -2,18 +2,13 @@ import path from 'path';
 import {bundle} from '@remotion/bundler';
 import {getCompositions, renderStill} from '@remotion/renderer';
 import chalk from 'chalk';
+import {InputProps} from './types';
 
-export const startRender = async ({
-	episode,
-	description,
-	avatar,
-}: {
-	episode: number;
-	description?: string;
-	avatar?: string;
-}) => {
+export const startRender = async (inputProps: InputProps) => {
 	console.log(
-		`[${chalk.green('remotion')}]: started rendering episode ${episode}`
+		`[${chalk.green('remotion')}]: started rendering episode ${
+			inputProps.episodeId
+		}`
 	);
 
 	// The composition you want to render
@@ -25,11 +20,7 @@ export const startRender = async ({
 		webpackOverride: (config) => config,
 	});
 	// Parametrize the video by passing arbitrary props to your component.
-	const inputProps = {
-		episode,
-		description,
-		avatar,
-	};
+
 	// Extract all the compositions you have defined in your project
 	// from the webpack bundle.
 	const comps = await getCompositions(bundleLocation, {
@@ -46,10 +37,9 @@ export const startRender = async ({
   Review "${entry}" for the correct ID.`);
 	}
 
-	const outputLocation = `${path.resolve(
-		__dirname,
-		'..'
-	)}/art/episode-${episode}.png`;
+	const outputLocation = `${path.resolve(__dirname, '..')}/art/episode-${
+		inputProps.episodeId
+	}.png`;
 
 	await renderStill({
 		composition,
@@ -59,7 +49,9 @@ export const startRender = async ({
 	});
 
 	console.log(
-		`[${chalk.green('remotion')}]: completed rendering episode ${episode}`
+		`[${chalk.green('remotion')}]: completed rendering episode ${
+			inputProps.episodeId
+		}`
 	);
 
 	return true;
