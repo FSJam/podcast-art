@@ -31,12 +31,12 @@ const textContainer: React.CSSProperties = {
 	fontFamily,
 	left: '7rem',
 	position: 'absolute',
-	width: '76rem',
+	width: '74rem',
 	textAlign: 'right',
 };
 const imageContainer: React.CSSProperties = {
-	top: 991,
-	left: 1430,
+	top: 972,
+	left: 1434,
 };
 
 const imageStyle: React.CSSProperties = {
