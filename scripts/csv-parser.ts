@@ -4,7 +4,6 @@ import async from 'async';
 import {startRender} from './remotion';
 import path from 'path';
 import chalk from 'chalk';
-import e from 'express';
 
 const csvParser = parse({delimiter: ','}, (err, data) => {
 	async.eachSeries(
@@ -27,11 +26,22 @@ const csvParser = parse({delimiter: ','}, (err, data) => {
 				return callback();
 			}
 
-			const props = {episode: line[0], description: line[1], avatar: line[2]};
+			const props = {
+				episode: line[0],
+				description: line[1],
+				avatar: line[2] !== '' ? line[2] : undefined,
+			};
 
-			startRender(props).then(() => {
-				callback();
-			});
+			startRender(props)
+				.then(() => {
+					callback();
+				})
+				.catch((err) => {
+					console.log(`[${chalk.red('error')}]: skipped episode ${line[0]}`);
+					console.log(`[${chalk.red('error')}]:`, err);
+
+					callback();
+				});
 		}
 	);
 });
