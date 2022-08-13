@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Img} from 'remotion';
 
-import art2 from './art-2.png';
+import art from './og-1.png';
 
 const fontFamily = 'Inter';
 
@@ -11,7 +11,7 @@ const absContainer: React.CSSProperties = {
 
 const descriptionStyle: React.CSSProperties = {
 	color: '#FFFFFF',
-	fontSize: '12rem',
+	fontSize: '3.5rem',
 	fontFamily,
 	fontWeight: 600,
 	margin: 0,
@@ -21,60 +21,51 @@ const descriptionStyle: React.CSSProperties = {
 };
 
 const episodeStyle: React.CSSProperties = {
-	color: '#FFFFFF',
 	fontFamily,
-	fontSize: '6rem',
+	color: '#FFFFFF',
+	fontSize: '2rem',
 	margin: 0,
-	paddingRight: '2rem',
 };
 
 const textContainer: React.CSSProperties = {
-	left: '7rem',
 	fontFamily,
+	left: '3rem',
 	position: 'absolute',
-	width: '86rem',
-	textAlign: 'right',
+	width: '42rem',
+	textAlign: 'left',
 };
 
-const imageContainerAvatar1: React.CSSProperties = {
-	top: 776,
-	left: 1963,
+const imageContainer: React.CSSProperties = {
+	top: 113,
+	left: 754,
 };
-const imageContainerAvatar2: React.CSSProperties = {
-	top: 1834,
-	left: 1670,
-};
-const imageStyle2Avatars: React.CSSProperties = {
+
+const imageStyle: React.CSSProperties = {
 	borderRadius: '100%',
-	height: 950,
-	width: 950,
+	height: 402,
+	width: 402,
 	zIndex: 10,
 };
 
-const CoverAvatar2: React.FC<{
+const CoverAvatar1: React.FC<{
 	episodeId: number;
 	title: string;
-	avatar: string[];
+	avatar: string;
 }> = ({episodeId, title, avatar}) => {
 	return (
 		<AbsoluteFill style={absContainer}>
-			<AbsoluteFill style={imageContainerAvatar1}>
-				<Img style={imageStyle2Avatars} src={avatar[0]} />
-			</AbsoluteFill>
-
-			<AbsoluteFill style={imageContainerAvatar2}>
-				<Img style={imageStyle2Avatars} src={avatar[1]} />
+			<AbsoluteFill style={imageContainer}>
+				<Img style={imageStyle} src={avatar} />
 			</AbsoluteFill>
 
 			<AbsoluteFill>
-				<Img src={art2} />
+				<Img src={art} />
 			</AbsoluteFill>
 
 			<AbsoluteFill
 				style={{
 					justifyContent: 'center',
 					height: 'auto',
-					margin: '40rem 0px 20rem',
 				}}
 			>
 				<div style={textContainer}>
@@ -86,4 +77,4 @@ const CoverAvatar2: React.FC<{
 	);
 };
 
-export default CoverAvatar2;
+export default CoverAvatar1;

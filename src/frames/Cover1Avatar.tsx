@@ -6,7 +6,7 @@ import art from './art.png';
 const fontFamily = 'Inter';
 
 const absContainer: React.CSSProperties = {
-	backgroundColor: '#363D40',
+	backgroundColor: '#0D1116',
 };
 
 const descriptionStyle: React.CSSProperties = {

@@ -2,9 +2,12 @@ import path from 'path';
 import {bundle} from '@remotion/bundler';
 import {getCompositions, renderStill} from '@remotion/renderer';
 import chalk from 'chalk';
-import {InputProps} from './types';
+import {InputProps, TypeProps} from './types';
 
-export const startRender = async (inputProps: InputProps) => {
+export const startRender = async (
+	inputProps: InputProps,
+	typeProps: TypeProps
+) => {
 	console.log(
 		`[${chalk.green('remotion')}]: started rendering episode ${
 			inputProps.episodeId
@@ -12,7 +15,7 @@ export const startRender = async (inputProps: InputProps) => {
 	);
 
 	// The composition you want to render
-	const compositionId = 'PodcastArt';
+
 	// You only have to do this once, you can reuse the bundle.
 	const entry = './src/index';
 	const bundleLocation = await bundle(path.resolve(entry), () => undefined, {
@@ -30,16 +33,16 @@ export const startRender = async (inputProps: InputProps) => {
 		inputProps,
 	});
 	// Select the composition you want to render.
-	const composition = comps.find((c) => c.id === compositionId);
+	const composition = comps.find((c) => c.id === typeProps.compositionId);
 	// Ensure the composition exists
 	if (!composition) {
-		throw new Error(`No composition with the ID ${compositionId} found.
+		throw new Error(`No composition with the ID ${typeProps.compositionId} found.
   Review "${entry}" for the correct ID.`);
 	}
 
-	const outputLocation = `${path.resolve(__dirname, '..')}/art/episode-${
-		inputProps.episodeId
-	}.png`;
+	const outputLocation = `${path.resolve(__dirname, '..')}/dist/${
+		typeProps.directory
+	}/${typeProps.slug}-${inputProps.episodeId}.png`;
 
 	await renderStill({
 		composition,
@@ -49,9 +52,9 @@ export const startRender = async (inputProps: InputProps) => {
 	});
 
 	console.log(
-		`[${chalk.green('remotion')}]: completed rendering episode ${
-			inputProps.episodeId
-		}`
+		`[${chalk.green('remotion')}]: completed rendering ${
+			typeProps.directory
+		} episode ${inputProps.episodeId}`
 	);
 
 	return true;

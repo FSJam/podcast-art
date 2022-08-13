@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Img} from 'remotion';
 
-import art2 from './art-2.png';
+import art2 from './og-2.png';
 
 const fontFamily = 'Inter';
 
@@ -11,7 +11,7 @@ const absContainer: React.CSSProperties = {
 
 const descriptionStyle: React.CSSProperties = {
 	color: '#FFFFFF',
-	fontSize: '12rem',
+	fontSize: '3.5rem',
 	fontFamily,
 	fontWeight: 600,
 	margin: 0,
@@ -21,33 +21,41 @@ const descriptionStyle: React.CSSProperties = {
 };
 
 const episodeStyle: React.CSSProperties = {
-	color: '#FFFFFF',
 	fontFamily,
-	fontSize: '6rem',
+	color: '#FFFFFF',
+	fontSize: '2rem',
 	margin: 0,
-	paddingRight: '2rem',
 };
 
 const textContainer: React.CSSProperties = {
-	left: '7rem',
 	fontFamily,
+	left: '3rem',
 	position: 'absolute',
-	width: '86rem',
-	textAlign: 'right',
+	width: '42rem',
+	textAlign: 'left',
 };
 
 const imageContainerAvatar1: React.CSSProperties = {
-	top: 776,
-	left: 1963,
+	top: 45,
+	left: 915,
 };
+
 const imageContainerAvatar2: React.CSSProperties = {
-	top: 1834,
-	left: 1670,
+	top: 338,
+	left: 835,
 };
+
+const imageStyle1Avatars: React.CSSProperties = {
+	borderRadius: '100%',
+	height: 259,
+	width: 259,
+	zIndex: 10,
+};
+
 const imageStyle2Avatars: React.CSSProperties = {
 	borderRadius: '100%',
-	height: 950,
-	width: 950,
+	height: 259,
+	width: 259,
 	zIndex: 10,
 };
 
@@ -59,7 +67,7 @@ const CoverAvatar2: React.FC<{
 	return (
 		<AbsoluteFill style={absContainer}>
 			<AbsoluteFill style={imageContainerAvatar1}>
-				<Img style={imageStyle2Avatars} src={avatar[0]} />
+				<Img style={imageStyle1Avatars} src={avatar[0]} />
 			</AbsoluteFill>
 
 			<AbsoluteFill style={imageContainerAvatar2}>
@@ -74,7 +82,6 @@ const CoverAvatar2: React.FC<{
 				style={{
 					justifyContent: 'center',
 					height: 'auto',
-					margin: '40rem 0px 20rem',
 				}}
 			>
 				<div style={textContainer}>

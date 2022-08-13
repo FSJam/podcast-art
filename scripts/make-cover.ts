@@ -18,4 +18,14 @@ console.log(
 console.log('||                                              ||');
 console.log('==================================================');
 
-startParse();
+startParse({
+	directory: 'art',
+	compositionId: 'PodcastArt',
+	slug: 'episode',
+});
+
+startParse({
+	directory: 'og',
+	compositionId: 'OGImage',
+	slug: 'og',
+});

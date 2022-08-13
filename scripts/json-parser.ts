@@ -3,18 +3,18 @@ import {startRender} from './remotion';
 import path from 'path';
 import chalk from 'chalk';
 import pLimit from 'p-limit';
-import {InputProps} from './types';
+import {InputProps, TypeProps} from './types';
 
 // Example Concurrency of 3 promise at once
 const limit = pLimit(5);
 
-const jsonParser = async (data: InputProps[]) =>
+const episodeParser = async (data: InputProps[], typeProps: TypeProps) =>
 	Promise.all(
 		data.map(async (inputProps: InputProps) => {
 			// Go to art folder create const of podcast art path
-			const imagePath = `${path.resolve(__dirname, '..')}/art/episode-${
-				inputProps.episodeId
-			}.png`;
+			const imagePath = `${path.resolve(__dirname, '..')}/dist/${
+				typeProps.directory
+			}/${typeProps.slug}-${inputProps.episodeId}.png`;
 
 			// If podcast art exist skip
 			if (fs.existsSync(imagePath)) {
@@ -22,7 +22,7 @@ const jsonParser = async (data: InputProps[]) =>
 			}
 
 			try {
-				await limit(() => startRender(inputProps));
+				await limit(() => startRender(inputProps, typeProps));
 				return 'rendered';
 			} catch (err) {
 				console.log(
@@ -34,14 +34,14 @@ const jsonParser = async (data: InputProps[]) =>
 		})
 	);
 
-export const startParse = async () => {
+export const startParse = async (typeProps: TypeProps) => {
 	// Check for episodes.csv
 	const episodes = `${path.resolve(__dirname, '..')}/episodes.json`;
 	try {
 		if (fs.existsSync(episodes)) {
 			const data = await fs.readFileSync(episodes);
 			const parsedData = JSON.parse(data.toString());
-			const returnedStatus = await jsonParser(parsedData);
+			const returnedStatus = await episodeParser(parsedData, typeProps);
 			// Work out statuses
 			const skipped = Object.values(returnedStatus).filter(
 				(element) => element === 'skipped'
@@ -53,18 +53,32 @@ export const startParse = async () => {
 				(element) => element === 'rendered'
 			).length;
 
-			console.log(`[${chalk.green('remotion')}]: Completed`);
-			console.log(`[${chalk.green('remotion')}]: Skipped ${skipped} renders`);
-			console.log(`[${chalk.green('remotion')}]: Rendered ${rendered} covers`);
-			console.log(`[${chalk.green('remotion')}]: Errored ${error} covers `);
+			console.log(
+				`[${chalk.green('remotion')}]: ${typeProps.slug} list Completed`
+			);
+			console.log(
+				`[${chalk.green('remotion')}]: Skipped ${skipped} ${
+					typeProps.slug
+				} images.`
+			);
+			console.log(
+				`[${chalk.green('remotion')}]: Rendered ${rendered} ${
+					typeProps.slug
+				} images.`
+			);
+			console.log(
+				`[${chalk.green('remotion')}]: Errored ${error} ${
+					typeProps.slug
+				} images.`
+			);
 		} else {
 			console.log(
 				`[${chalk.red('error')}]: No ${chalk.blue('episodes.json')} found`
 			);
 			console.log(
 				`[${chalk.red('error')}]: Please copy ${chalk.blue(
-					'episodes.demo.csv'
-				)} to ${chalk.blue('episodes.csv')}`
+					'episodes.demo.json'
+				)} to ${chalk.blue('episodes.json')}`
 			);
 		}
 	} catch (err) {
