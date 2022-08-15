@@ -14,7 +14,7 @@ const episodeParser = async (data: InputProps[], typeProps: TypeProps) =>
 			// Go to art folder create const of podcast art path
 			const imagePath = `${path.resolve(__dirname, '..')}/dist/${
 				typeProps.directory
-			}/${typeProps.slug}-${inputProps.episodeId}.png`;
+			}/episode-${inputProps.episodeId}.png`;
 
 			// If podcast art exist skip
 			if (fs.existsSync(imagePath)) {

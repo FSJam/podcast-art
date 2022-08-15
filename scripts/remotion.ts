@@ -42,7 +42,7 @@ export const startRender = async (
 
 	const outputLocation = `${path.resolve(__dirname, '..')}/dist/${
 		typeProps.directory
-	}/${typeProps.slug}-${inputProps.episodeId}.png`;
+	}/episode-${inputProps.episodeId}.png`;
 
 	await renderStill({
 		composition,
