@@ -5,7 +5,6 @@
 	"scripts": {
 		"start": "tsc && node dist/server/index.js",
 		"dev": "remotion preview src/index.tsx",
-		"render": "remotion still src/index.tsx PodcastArt out/still.png",
 		"upgrade": "remotion upgrade",
 		"server": "ts-node src/server/index.tsx",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc",

@@ -10,10 +10,10 @@ A template for designing still images with dynamic data with built-in server for
 yarn dev
 ```
 
-**Render it**
+**Render all OG and Podcast Art**
 
 ```console
-yarn render
+yarn make
 ```
 
 **Keep Remotion up to date**
