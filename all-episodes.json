@@ -1,0 +1,440 @@
+[
+	{
+		"episodeId": 86,
+		"title": "Netlify Edge Functions with\nEduardo Bouças",
+		"avatar": "https://pbs.twimg.com/profile_images/1105874514502696961/6xGK8lg5_400x400.png"
+	},
+	{
+		"episodeId": 85,
+		"title": "Stately with\nDavid Khourshid",
+		"avatar": "https://pbs.twimg.com/profile_images/619677584805208064/RwwbnNpi_400x400.jpg"
+	},
+	{
+		"episodeId": 84,
+		"title": "Storybook with\nMichael Chan",
+		"avatar": "https://d31ezp3r8jwmks.cloudfront.net/2nqogutlztl9mivxrya0sqkw2d7u"
+	},
+	{
+		"episodeId": 83,
+		"title": "This Dot Labs with\nTracy Lee and \nDustin Goodman",
+		"avatar": [
+			"https://pbs.twimg.com/profile_images/1549431570561376257/5yjlVcz0_400x400.jpg",
+			"https://pbs.twimg.com/profile_images/1009202310415835137/Rwaizcli_400x400.jpg"
+		]
+	},
+	{
+		"episodeId": 82,
+		"title": "React Bricks with\nMatteo Frana",
+		"avatar": "https://pbs.twimg.com/profile_images/1534126077920034816/tj3SY6ds_400x400.jpg"
+	},
+	{
+		"episodeId": 81,
+		"title": "Netlify Scheduled Functions with\nSimon Knott",
+		"avatar": "https://pbs.twimg.com/profile_images/1549017543691669506/9JJQTm7W_400x400.jpg"
+	},
+	{
+		"episodeId": 80,
+		"title": "Eleventy with Ben Myers",
+		"avatar": "https://images.transistor.fm/file/transistor/images/person/8ef59e62-f6ee-4d2c-aeda-802483b8b3e0/thumb_1664588250-image.jpg"
+	},
+	{
+		"episodeId": 79,
+		"title": "Widgets",
+		"avatar": [
+			"https://pbs.twimg.com/profile_images/1549247631867711488/hK_Qr-Dx_400x400.png",
+			"https://pbs.twimg.com/profile_images/1530701793264402432/nTln6dx5_400x400.jpg"
+		]
+	},
+	{
+		"episodeId": 78,
+		"title": "The Jamstack Innovation Fund with Matt Biilmann",
+		"avatar": "https://pbs.twimg.com/profile_images/560874041452408833/a8obZPqr_400x400.jpeg"
+	},
+	{
+		"episodeId": 77,
+		"title": "Qwik with \nMiško Hevery",
+		"avatar": "https://pbs.twimg.com/profile_images/1389683812968194049/MhsEUijj_400x400.jpg"
+	},
+	{
+		"episodeId": 76,
+		"title": "Composability with \nIshan Anand and \nScott Steinlage",
+		"avatar": [
+			"https://d33wubrfki0l68.cloudfront.net/46091d46bed298c060c3fa6a57f032d71ea7a04d/fabb6/img/speakers/ishananand.jpg",
+			"https://pbs.twimg.com/profile_images/1530013613519413250/N6-zrWex_400x400.jpg"
+		]
+	},
+	{
+		"episodeId": 75,
+		"title": "Prisma with \nAustin Crim",
+		"avatar": "https://pbs.twimg.com/profile_images/1277774477099773954/cNUzQvNX_400x400.jpg"
+	},
+	{
+		"episodeId": 74,
+		"title": "Live at Remix Conf with \nScott Steinlage and \nWill De Ath",
+		"avatar": [
+			"https://pbs.twimg.com/profile_images/1542448478504321024/2_nZn6Uc_400x400.jpg",
+			"https://pbs.twimg.com/profile_images/1530013613519413250/N6-zrWex_400x400.jpg"
+		]
+	},
+	{
+		"episodeId": 73,
+		"title": "Serverless Guru with \nRyan Jones",
+		"avatar": "https://pbs.twimg.com/profile_images/1442553695892299777/Z8Nb4aYj_400x400.jpg"
+	},
+	{
+		"episodeId": 72,
+		"title": "Elm with \nLindsay Wardell",
+		"avatar": "https://pbs.twimg.com/profile_images/1549048989244280834/ivKHVG3t_400x400.jpg"
+	},
+	{
+		"episodeId": 71,
+		"title": "Remix with \nKent C. Dodds",
+		"avatar": "https://pbs.twimg.com/profile_images/1529905780542959616/Ibwrp7VJ_400x400.jpg"
+	},
+	{
+		"episodeId": 70,
+		"title": "Hydrogen with \nJosh Larson",
+		"avatar": "https://media-exp1.licdn.com/dms/image/C4E03AQHrjU_2nchZQw/profile-displayphoto-shrink_800_800/0/1604628041885?e=1665014400&v=beta&t=WbMNsqCzHS07T42ofQDhprqpoYftt5jPNN3eUFvshhs"
+	},
+	{
+		"episodeId": 69,
+		"title": "Sizzy with \nKitze",
+		"avatar": "https://avatars.githubusercontent.com/u/1160594?v=4"
+	},
+	{
+		"episodeId": 68,
+		"title": "Flightcontrol with \nBrandon Bayer and \nMina Abadir",
+		"avatar": [
+			"https://wpblog.semaphoreci.com/wp-content/uploads/2021/08/IMG_5399-784x784.jpeg",
+			"https://pbs.twimg.com/profile_images/1416805373344899077/4oQiajdd_400x400.jpg"
+		]
+	},
+	{
+		"episodeId": 67,
+		"title": "Developer Experience Engineering with \nPrince Wilson",
+		"avatar": "https://pbs.twimg.com/profile_images/1539733456887988230/mlTGotGL_400x400.jpg"
+	},
+	{
+		"episodeId": 66,
+		"title": "RedwoodJS with \nPeter Pistorius",
+		"avatar": "https://pbs.twimg.com/profile_images/1384539886980681738/XIT9pYbY_400x400.jpg"
+	},
+	{
+		"episodeId": 65,
+		"title": "Snaplet with \nPeter Pistorius",
+		"avatar": "https://pbs.twimg.com/profile_images/1384539886980681738/XIT9pYbY_400x400.jpg"
+	},
+	{
+		"episodeId": 64,
+		"title": "TypeScript with \nOrta Therox",
+		"avatar": "https://avatars.githubusercontent.com/u/49038?v=4"
+	},
+	{
+		"episodeId": 63,
+		"title": "Modern CSS with \nStephanie Eckles",
+		"avatar": "https://pbs.twimg.com/profile_images/1288204727205998595/d5OBgBqV_400x400.jpg"
+	},
+	{
+		"episodeId": 62,
+		"title": "Fly with \nRugwiro Valentin",
+		"avatar": "https://pbs.twimg.com/profile_images/1506352987681218564/Q4ymNVrM_400x400.jpg"
+	},
+	{
+		"episodeId": 61,
+		"title": "Everfund with \nChristopher Burns"
+	},
+	{
+		"episodeId": 60,
+		"title": "Marko with \nDylan Piercey",
+		"avatar": "https://pbs.twimg.com/profile_images/1351914638770782210/6H5MxSr4_400x400.jpg"
+	},
+	{
+		"episodeId": 59,
+		"title": "GreenSock with \nCassie Evans",
+		"avatar": "https://pbs.twimg.com/profile_images/1486429238941134861/y11F6GrI_400x400.jpg"
+	},
+	{
+		"episodeId": 58,
+		"title": "Gitpod with \nMike Nikles",
+		"avatar": "https://pbs.twimg.com/profile_images/1255590513035665408/uV0_K_3T_400x400.jpg"
+	},
+	{
+		"episodeId": 57,
+		"title": "Sequin with \nAnthony Accomazzo and \nEric Goldman",
+		"avatar": [
+			"https://avatars.githubusercontent.com/u/927029?v=4",
+			"https://pbs.twimg.com/profile_images/1317869151105425408/RjU8hCjx_400x400.jpg"
+		]
+	},
+	{
+		"episodeId": 56,
+		"title": "FeatureBoard with \nJake Ginnivan",
+		"avatar": "https://pbs.twimg.com/profile_images/1166911620817149953/t3y6RfNU_400x400.jpg"
+	},
+	{
+		"episodeId": 55,
+		"title": "Prismic with \nAlex Trost",
+		"avatar": "https://pbs.twimg.com/profile_images/1411453247932481544/ZUh_TtBa_400x400.jpg"
+	},
+	{
+		"episodeId": 54,
+		"title": "Bedrock Layout with \nTravis Waith-Mair",
+		"avatar": "https://avatars.githubusercontent.com/u/5460770?v=4"
+	},
+	{
+		"episodeId": 53,
+		"title": "Solid with \nRyan Carniato",
+		"avatar": "https://miro.medium.com/max/3150/1*eMR1FyWRupD7Ex07HZykGA.jpeg"
+	},
+	{
+		"episodeId": 52,
+		"title": "Open Source Stacks with \nAnt Wilson",
+		"avatar": "https://pbs.twimg.com/profile_images/1476478171579092993/qHe50GV4_400x400.png"
+	},
+	{
+		"episodeId": 51,
+		"title": "Storyblok with \nFacundo Giuliani",
+		"avatar": "https://pbs.twimg.com/profile_images/1496310479060447241/pEmOTzmU_400x400.jpg"
+	},
+	{
+		"episodeId": 50,
+		"title": "One Year Later",
+		"avatar": "https://pbs.twimg.com/profile_images/1530701793264402432/nTln6dx5_400x400.jpg"
+	},
+	{
+		"episodeId": 49,
+		"title": "Slinkity with \nBen Holmes",
+		"avatar": "https://pbs.twimg.com/profile_images/1131721513026170883/kvrKqlHc_400x400.png"
+	},
+	{
+		"episodeId": 48,
+		"title": "Astro with \nFred Schott",
+		"avatar": "https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg"
+	},
+	{
+		"episodeId": 47,
+		"title": "Podrocket with \nKate Trahan",
+		"avatar": "https://pbs.twimg.com/profile_images/1530656308814393346/mIFBR_yR_400x400.jpg"
+	},
+	{
+		"episodeId": 46,
+		"title": "Layer0 with \nIshan Anand and \nMark Brocato",
+		"avatar": [
+			"https://d33wubrfki0l68.cloudfront.net/46091d46bed298c060c3fa6a57f032d71ea7a04d/fabb6/img/speakers/ishananand.jpg",
+			"https://media-exp1.licdn.com/dms/image/C4D03AQFFfyEka2bxcg/profile-displayphoto-shrink_800_800/0/1597698276207?e=1665014400&v=beta&t=mZw39v9WGjrigG78nbpkhSXowrfTzSAf0EpFvDtHe04"
+		]
+	},
+	{
+		"episodeId": 45,
+		"title": "Cloudinary with \nTessa Mero",
+		"avatar": "https://pbs.twimg.com/profile_images/1455609966056800258/DnXcomJY_400x400.jpg"
+	},
+	{
+		"episodeId": 44,
+		"title": "Hypercomplexity with \nAldo Bucchi",
+		"avatar": "https://pbs.twimg.com/profile_images/1062345605521887233/mCfbOLhv_400x400.jpg"
+	},
+	{
+		"episodeId": 43,
+		"title": "Lambdragon with \nAldo Bucchi",
+		"avatar": "https://pbs.twimg.com/profile_images/1062345605521887233/mCfbOLhv_400x400.jpg"
+	},
+	{
+		"episodeId": 42,
+		"title": "Docusaurus with \nSebastien Lorber",
+		"avatar": "https://www.pentalog.com/wp-content/uploads/2021/09/Sebastien-Lorber_345x345.png"
+	},
+	{
+		"episodeId": 41,
+		"title": "UserVitals with \nTharshan Muthulingam",
+		"avatar": "https://pbs.twimg.com/profile_images/1430263236507623428/WCw4yqfs_400x400.jpg"
+	},
+	{
+		"episodeId": 40,
+		"title": "Redux Toolkit with \nMark Erikson",
+		"avatar": "https://pbs.twimg.com/profile_images/842582724737163264/tFKLiJI5_400x400.jpg"
+	},
+	{
+		"episodeId": 39,
+		"title": "Blockchain with \nNoah Hein",
+		"avatar": "https://pbs.twimg.com/profile_images/1356983286120259588/Md9nC25g_400x400.jpg"
+	},
+	{
+		"episodeId": 38,
+		"title": "Learn with \nJason Lengstorf",
+		"avatar": "https://pbs.twimg.com/profile_images/1524064394157576193/tB5HL_ES_400x400.jpg"
+	},
+	{
+		"episodeId": 37,
+		"title": "Talking Serverless with \nJosh Proto",
+		"avatar": "https://pbs.twimg.com/profile_images/1318619515488358402/xy5_hejv_400x400.jpg"
+	},
+	{
+		"episodeId": 36,
+		"title": "Is React a Rails Competitor Yet with \nMichael Chan",
+		"avatar": "https://d31ezp3r8jwmks.cloudfront.net/2nqogutlztl9mivxrya0sqkw2d7u"
+	},
+	{
+		"episodeId": 35,
+		"title": "Bit with \nDebbie O'Brien",
+		"avatar": "https://pbs.twimg.com/profile_images/1537114604278530048/FMrBa87o_400x400.jpg"
+	},
+	{
+		"episodeId": 34,
+		"title": "Echobind with \nJenn Robison",
+		"avatar": "https://pbs.twimg.com/profile_images/1339011339864293376/QFjcRLoW_400x400.jpg"
+	},
+	{
+		"episodeId": 33,
+		"title": "Supabase with \nPaul Copplestone",
+		"avatar": "https://pbs.twimg.com/profile_images/1431516711929331712/2cGWC6dX_400x400.jpg"
+	},
+	{
+		"episodeId": 32,
+		"title": "The Guild with \nUri Goldshtein",
+		"avatar": "https://pbs.twimg.com/profile_images/842775577761386497/sjLkh27C_400x400.jpg"
+	},
+	{
+		"episodeId": 31,
+		"title": "Fullstack Accessibility with \nBen Myers",
+		"avatar": "https://pbs.twimg.com/profile_images/1022294004988145665/YHAXkdeR_400x400.jpg"
+	},
+	{
+		"episodeId": 30,
+		"title": "To Fork or Not to Fork with \nBrandon Bayer",
+		"avatar": "https://wpblog.semaphoreci.com/wp-content/uploads/2021/08/IMG_5399-784x784.jpeg"
+	},
+	{
+		"episodeId": 29,
+		"title": "The History of the Jamstack with \nBrian Douglas",
+		"avatar": "https://media-exp1.licdn.com/dms/image/C5603AQELB6XEUapZzg/profile-displayphoto-shrink_800_800/0/1529072125576?e=1665014400&v=beta&t=f0RwyDC7wG9pVwubqZ5uKue5M10MeSWfE2SX0wZFBIg"
+	},
+	{
+		"episodeId": 28,
+		"title": "Elements with \nChris Mather",
+		"avatar": "https://pbs.twimg.com/profile_images/1357915409819729921/7o01ejzB_400x400.jpg"
+	},
+	{
+		"episodeId": 27,
+		"title": "Open Source Education with \nMonica Powell",
+		"avatar": "https://pbs.twimg.com/profile_images/1389420493359484928/6XqyB4Q1_400x400.jpg"
+	},
+	{
+		"episodeId": 26,
+		"title": "Multilingual Documentation with \nClaire Froelich",
+		"avatar": "https://pbs.twimg.com/profile_images/1487133645177503745/xZlJ2VZ6_400x400.jpg"
+	},
+	{
+		"episodeId": 25,
+		"title": "Fullstack Serverless with \nNader Dabit",
+		"avatar": "https://pbs.twimg.com/profile_images/1546003895687716864/pMJs0GdA_400x400.png"
+	},
+	{
+		"episodeId": 24,
+		"title": "Plenti with \nJim Fisk",
+		"avatar": "https://pbs.twimg.com/profile_images/950212711639670784/a0iQxddd_400x400.jpg"
+	},
+	{
+		"episodeId": 23,
+		"title": "Tutorial Driven Development with \nRob Cameron",
+		"avatar": "https://pbs.twimg.com/profile_images/1329128865847939072/Eq4WDhBL_400x400.jpg"
+	},
+	{
+		"episodeId": 22,
+		"title": "Fullstack Security with \nRyan Chenkie",
+		"avatar": "https://pbs.twimg.com/profile_images/875498876261859329/7iV5CwVY_400x400.jpg"
+	},
+	{
+		"episodeId": 21,
+		"title": "StepZen with \nAnant Jhingran",
+		"avatar": "https://pbs.twimg.com/profile_images/2168450243/anant3_400x400.jpg"
+	},
+	{
+		"episodeId": 20,
+		"title": "Bison with \nChris Ball",
+		"avatar": "https://pbs.twimg.com/profile_images/1323754278717181954/mFz1_P5f_400x400.jpg"
+	},
+	{
+		"episodeId": 19,
+		"title": "Building Fullstack Jamstack SaaS with \nMike Cavaliere",
+		"avatar": "https://pbs.twimg.com/profile_images/1540354580818661376/-YF6nk5u_400x400.jpg"
+	},
+	{
+		"episodeId": 18,
+		"title": "React Query with \nTanner Linsley",
+		"avatar": "https://pbs.twimg.com/profile_images/1164219021283094530/ACRln2kL_400x400.jpg"
+	},
+	{
+		"episodeId": 17,
+		"title": "Writing about Jamstack with \nRaymond Camden and \nBrian Rinaldi",
+		"avatar": [
+			"https://pbs.twimg.com/profile_images/1455189341223915524/a5iISj5l_400x400.jpg",
+			"https://pbs.twimg.com/profile_images/980811953273737216/jtzYx-Rg_400x400.jpg"
+		]
+	},
+	{
+		"episodeId": 16,
+		"title": "Tape.sh with \nDanny Choudhury",
+		"avatar": "https://pbs.twimg.com/profile_images/1457710207732228098/3u1rLqdb_400x400.jpg"
+	},
+	{
+		"episodeId": 15,
+		"title": "Quirrel with \nSimon Knott",
+		"avatar": "https://pbs.twimg.com/profile_images/1549017543691669506/9JJQTm7W_400x400.jpg"
+	},
+	{
+		"episodeId": 14,
+		"title": "Programming Cultures with \nPeter Cooper",
+		"avatar": "https://pbs.twimg.com/profile_images/1095997193343954946/c2kEUpqO_400x400.png"
+	},
+	{
+		"episodeId": 13,
+		"title": "Fauna with \nBrecht De Rooms",
+		"avatar": "https://pbs.twimg.com/profile_images/1186611093977927680/OJkFqqAA_400x400.jpg"
+	},
+	{
+		"episodeId": 12,
+		"title": "Amplify and DataStore with \nShawn (Swyx) Wang",
+		"avatar": "https://pbs.twimg.com/profile_images/1510319731466993664/tGoqnzGK_400x400.jpg"
+	},
+	{
+		"episodeId": 11,
+		"title": "Microsoft Open Source with \nKim-Adeline Miguel",
+		"avatar": "https://pbs.twimg.com/profile_images/1150959393308958727/5apGZfUZ_400x400.jpg"
+	},
+	{
+		"episodeId": 10,
+		"title": "Nexus and Code-First Schemas with \nJason Kuhrt",
+		"avatar": "https://pbs.twimg.com/profile_images/1553517155601289217/yjgQefBl_400x400.jpg"
+	},
+	{
+		"episodeId": 7,
+		"title": "Shipping Web Applications with \nDominic Saadi",
+		"avatar": "https://avatars.githubusercontent.com/u/32992335?v=4"
+	},
+	{
+		"episodeId": 6,
+		"title": "Blitz.js and Fullstack React with \nBrandon Bayer",
+		"avatar": "https://wpblog.semaphoreci.com/wp-content/uploads/2021/08/IMG_5399-784x784.jpeg"
+	},
+	{
+		"episodeId": 5,
+		"title": "When to Declare Technical Bankruptcy?",
+		"avatar": "https://pbs.twimg.com/profile_images/1530701793264402432/nTln6dx5_400x400.jpg"
+	},
+	{
+		"episodeId": 4,
+		"title": "Bringing Fullstack to the Jamstack with \nTom Preston-Werner",
+		"avatar": "https://imageio.forbes.com/specials-images/imageserve/5c74515731358e35dd273053/0x0.jpg"
+	},
+	{
+		"episodeId": 3,
+		"title": "Mintbean and Fullstack Education with \nMonarch Wadia",
+		"avatar": "https://media-exp1.licdn.com/dms/image/C4D03AQGN2KmXvw6CGg/profile-displayphoto-shrink_800_800/0/1637640642044?e=1665014400&v=beta&t=f3BHpkrk0RyB_HZiZIaz09QYFtROLfJagZcWREaJomQ"
+	},
+	{
+		"episodeId": 2,
+		"title": "Building Online Communities with (the) \nDavid Price",
+		"avatar": "https://pbs.twimg.com/profile_images/1505689196341567489/PhWdYqFK_400x400.jpg"
+	}
+]
