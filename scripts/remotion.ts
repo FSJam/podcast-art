@@ -17,7 +17,7 @@ export const startRender = async (
 	// The composition you want to render
 
 	// You only have to do this once, you can reuse the bundle.
-	const entry = './src/index';
+	const entry = './src/index.tsx';
 	const bundleLocation = await bundle(path.resolve(entry), () => undefined, {
 		// If you have a Webpack override, make sure to add it here
 		webpackOverride: (config) => config,
