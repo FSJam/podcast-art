@@ -1,8 +1,18 @@
 [
 	{
-		"episodeId": 93,
+		"episodeId": 95,
+		"title": "Framework Field Guide\n with\n Corbin Crutchley",
+		"avatar": "https://pbs.twimg.com/profile_images/1652281623520624641/dA3kanAY_400x400.jpg"
+	},
+	{
+		"episodeId": 94,
 		"title": "Clerk with\nJames Perkins",
 		"avatar": "https://pbs.twimg.com/profile_images/1613589907133403161/zGtDomUL_400x400.jpg"
+	},
+		{
+		"episodeId": 93,
+		"title": "Causeworks with\n Jim Fisk",
+		"avatar": "https://pbs.twimg.com/profile_images/950212711639670784/a0iQxddd_400x400.jpg"
 	},
 	{
 		"episodeId": 92,
