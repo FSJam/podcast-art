@@ -219,7 +219,7 @@
 	{
 		"episodeId": 55,
 		"title": "Prismic with \nAlex Trost",
-		"avatar": "https://pbs.twimg.com/profile_images/1411453247932481544/ZUh_TtBa_400x400.jpg"
+		"avatar": "https://pbs.twimg.com/profile_images/1558116076717805570/iICPBWXm_400x400.jpg"
 	},
 	{
 		"episodeId": 54,
@@ -372,7 +372,7 @@
 	{
 		"episodeId": 25,
 		"title": "Fullstack Serverless with \nNader Dabit",
-		"avatar": "https://pbs.twimg.com/profile_images/1546003895687716864/pMJs0GdA_400x400.png"
+		"avatar": "https://pbs.twimg.com/profile_images/1683249222534025216/-AksKsna_400x400.jpg"
 	},
 	{
 		"episodeId": 24,
@@ -465,7 +465,7 @@
 	{
 		"episodeId": 5,
 		"title": "When to Declare Technical Bankruptcy?",
-		"avatar": "https://pbs.twimg.com/profile_images/1530701793264402432/nTln6dx5_400x400.jpg"
+		"avatar": "https://pbs.twimg.com/profile_images/1558869070811889665/-LFEk8Uc_400x400.jpg"
 	},
 	{
 		"episodeId": 4,
@@ -475,11 +475,21 @@
 	{
 		"episodeId": 3,
 		"title": "Mintbean and Fullstack Education with \nMonarch Wadia",
-		"avatar": "https://media-exp1.licdn.com/dms/image/C4D03AQGN2KmXvw6CGg/profile-displayphoto-shrink_800_800/0/1637640642044?e=1665014400&v=beta&t=f3BHpkrk0RyB_HZiZIaz09QYFtROLfJagZcWREaJomQ"
+		"avatar": "https://media.licdn.com/dms/image/D5603AQHLX1Sv-nzxAQ/profile-displayphoto-shrink_800_800/0/1670985329798?e=1697068800&v=beta&t=16O492zhMA9rw_5bN0isxpdWNIZPFBeif2-Jv7cGoXA"
 	},
 	{
 		"episodeId": 2,
 		"title": "Building Online Communities with (the) \nDavid Price",
 		"avatar": "https://pbs.twimg.com/profile_images/1505689196341567489/PhWdYqFK_400x400.jpg"
+	},
+	{
+		"episodeId": 1,
+		"title": "The Next Requirement of FSJam?",
+		"avatar": "https://pbs.twimg.com/profile_images/1558869070811889665/-LFEk8Uc_400x400.jpg"
+	},
+	{
+		"episodeId": 0,
+		"title": "The Fullstack Jamstack Podcast",
+		"avatar": "https://pbs.twimg.com/profile_images/1558869070811889665/-LFEk8Uc_400x400.jpg"
 	}
 ]
